@@ -4,36 +4,51 @@ export default function ExecutiveJourney() {
       phase: "Foundation",
       company: "Satyam Computer Services",
       role: "Senior Consultant – Business Maturity",
+      outcome:
+        "Process Excellence & Business Transformation",
       description:
-        "Built deep expertise in process excellence, quality frameworks, business maturity assessment and enterprise transformation methodologies.",
+        "Developed deep expertise in quality management, process excellence, business maturity frameworks and enterprise transformation methodologies. Established the foundations of a career focused on operational performance and business value creation.",
     },
+
     {
-      phase: "Banking Transformation",
+      phase: "Transformation Excellence",
       company: "HSBC",
       role: "AVP – Quality & Banking Transformation",
+      outcome:
+        "Operational Excellence & Banking Transformation",
       description:
-        "Led operational excellence, process redesign and transformation initiatives supporting large-scale banking operations.",
+        "Led large-scale banking transformation initiatives focused on operational excellence, process redesign, governance and performance improvement. Expanded leadership responsibilities across complex global operations.",
     },
+
     {
-      phase: "Enterprise Transformation",
+      phase: "Enterprise Leadership",
       company: "Tata Consultancy Services",
       role: "Transformation Head",
+      outcome:
+        "Global Transformation Programmes",
       description:
-        "Led transformation programs across Utilities, Media, Information Services, Finance & Accounting and Supply Chain functions for global clients.",
+        "Directed transformation initiatives across Utilities, Media, Finance & Accounting, Information Services and Supply Chain functions. Built expertise in large-scale enterprise transformation and value realisation across international clients.",
     },
+
     {
-      phase: "Global Leadership",
-      company: "WNS Global Services",
+      phase: "Global Digital Transformation",
+      company: "WNS Global Services / Capgemini",
       role: "Global Digital Transformation Lead",
+      outcome:
+        "Digital, AI & Shared Services Leadership",
       description:
-        "Directed enterprise-wide digital transformation, AI enablement, operating model redesign and shared services modernisation programs.",
+        "Led enterprise-wide transformation programmes spanning digital, automation, customer operations, AI enablement, operating model redesign and shared services modernisation across multiple industries and geographies.",
     },
+
     {
-      phase: "Present",
-      company: "Enterprise AI & Transformation Leadership",
-      role: "Strategy • Digital • AI • Shared Services",
+      phase: "Enterprise AI Era",
+      company: "AI, GCC & Value Creation Leadership",
+      role:
+        "Enterprise AI • Shared Services • GCC Strategy",
+      outcome:
+        "Board-Level Transformation Impact",
       description:
-        "Driving enterprise AI adoption, customer operations transformation, GCC evolution, operational excellence and business value creation at scale.",
+        "Focused on helping organisations unlock enterprise value through AI adoption, GCC evolution, customer operations excellence, operating model redesign and transformation governance. Positioning businesses for the next generation of intelligent operations.",
     },
   ];
 
@@ -41,98 +56,156 @@ export default function ExecutiveJourney() {
     <section
       id="journey"
       style={{
-        padding: "120px 8%",
-        background: "#050505",
+        background: "#05070D",
+        padding: "120px 40px",
+        color: "#ffffff",
       }}
     >
       <div
         style={{
-          textAlign: "center",
-          marginBottom: "60px",
-        }}
-      >
-        <p
-          style={{
-            color: "#c9a84c",
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            fontSize: "14px",
-          }}
-        >
-          Executive Journey
-        </p>
-
-        <h2
-          style={{
-            fontSize: "52px",
-            marginTop: "20px",
-            color: "#ffffff",
-          }}
-        >
-          Building Transformation Leadership
-        </h2>
-      </div>
-
-      <div
-        style={{
-          maxWidth: "1000px",
+          maxWidth: "1400px",
           margin: "0 auto",
-          display: "grid",
-          gap: "24px",
         }}
       >
-        {journey.map((item, index) => (
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "90px",
+          }}
+        >
           <div
-            key={index}
             style={{
-              background: "#0b0b0b",
-              border: "1px solid rgba(201,168,76,0.25)",
-              borderRadius: "20px",
-              padding: "30px",
+              color: "#D4AF37",
+              textTransform: "uppercase",
+              letterSpacing: "4px",
+              fontSize: "14px",
+              marginBottom: "20px",
             }}
           >
-            <div
-              style={{
-                color: "#c9a84c",
-                fontSize: "13px",
-                marginBottom: "10px",
-              }}
-            >
-              {item.phase}
-            </div>
-
-            <h3
-              style={{
-                fontSize: "36px",
-                color: "#ffffff",
-                marginBottom: "12px",
-              }}
-            >
-              {item.company}
-            </h3>
-
-            <h4
-              style={{
-                color: "#ffffff",
-                fontSize: "22px",
-                marginBottom: "14px",
-                fontWeight: 400,
-              }}
-            >
-              {item.role}
-            </h4>
-
-            <p
-              style={{
-                color: "#cfcfcf",
-                lineHeight: 1.8,
-                fontSize: "16px",
-              }}
-            >
-              {item.description}
-            </p>
+            Executive Leadership Evolution
           </div>
-        ))}
+
+          <h2
+            style={{
+              fontSize: "56px",
+              color: "#ffffff",
+              marginBottom: "20px",
+            }}
+          >
+            Building Enterprise Transformation Leadership
+          </h2>
+
+          <p
+            style={{
+              maxWidth: "900px",
+              margin: "0 auto",
+              color: "#AAB2C5",
+              fontSize: "20px",
+              lineHeight: "1.8",
+            }}
+          >
+            A 25+ year journey from process excellence
+            practitioner to enterprise AI, transformation
+            and operating model leader.
+          </p>
+        </div>
+
+        <div
+          style={{
+            position: "relative",
+            maxWidth: "1100px",
+            margin: "0 auto",
+          }}
+        >
+          {journey.map((item, index) => (
+            <div
+              key={item.company}
+              style={{
+                display: "flex",
+                gap: "30px",
+                marginBottom:
+                  index === journey.length - 1
+                    ? "0"
+                    : "30px",
+              }}
+            >
+              <div
+                style={{
+                  minWidth: "180px",
+                }}
+              >
+                <div
+                  style={{
+                    background: "#D4AF37",
+                    color: "#000",
+                    borderRadius: "999px",
+                    padding: "10px 18px",
+                    textAlign: "center",
+                    fontWeight: 700,
+                    fontSize: "14px",
+                  }}
+                >
+                  {item.phase}
+                </div>
+              </div>
+
+              <div
+                style={{
+                  flex: 1,
+                  background: "#0A0F1C",
+                  border:
+                    "1px solid rgba(212,175,55,0.15)",
+                  borderRadius: "22px",
+                  padding: "36px",
+                }}
+              >
+                <div
+                  style={{
+                    color: "#8AAAE5",
+                    textTransform: "uppercase",
+                    letterSpacing: "2px",
+                    fontSize: "13px",
+                    marginBottom: "14px",
+                  }}
+                >
+                  {item.outcome}
+                </div>
+
+                <h3
+                  style={{
+                    color: "#F5F7FA",
+                    fontSize: "34px",
+                    marginBottom: "12px",
+                  }}
+                >
+                  {item.company}
+                </h3>
+
+                <h4
+                  style={{
+                    color: "#D4AF37",
+                    fontSize: "22px",
+                    marginBottom: "20px",
+                    fontWeight: 500,
+                  }}
+                >
+                  {item.role}
+                </h4>
+
+                <p
+                  style={{
+                    color: "#C8D0E0",
+                    fontSize: "17px",
+                    lineHeight: "1.9",
+                    margin: 0,
+                  }}
+                >
+                  {item.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Navigation() {
   return (
     <nav
@@ -7,8 +9,8 @@ export default function Navigation() {
         left: 0,
         right: 0,
         zIndex: 1000,
-        background: "rgba(12,12,13,0.85)",
-        backdropFilter: "blur(12px)",
+        background: "rgba(12,12,13,0.90)",
+        backdropFilter: "blur(16px)",
         borderBottom: "1px solid rgba(201,168,76,0.15)",
       }}
     >
@@ -16,34 +18,92 @@ export default function Navigation() {
         style={{
           maxWidth: "1400px",
           margin: "0 auto",
-          padding: "20px 40px",
+          padding: "8px 40px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
         }}
       >
-        <div
+        <a
+          href="/"
           style={{
-            color: "#c9a84c",
-            fontWeight: "bold",
-            letterSpacing: "2px",
+            display: "flex",
+            alignItems: "center",
+            textDecoration: "none",
           }}
         >
-          AMIT SHARMA
-        </div>
+          <Image
+  src="/logo.png"
+  alt="Amit"
+  width={220}
+  height={44}
+  priority
+  style={{
+    width: "220px",
+    height: "auto",
+    display: "block",
+  }}
+/>
+        </a>
 
         <div
           style={{
             display: "flex",
-            gap: "30px",
+            gap: "32px",
             color: "#ffffff",
+            fontSize: "13px",
+            fontWeight: 500,
           }}
         >
-          <span>Impact</span>
-          <span>Transformations</span>
-          <span>Journey</span>
-          <span>Insights</span>
-          <span>Contact</span>
+          <a
+            href="#impact"
+            style={{
+              color: "#ffffff",
+              textDecoration: "none",
+            }}
+          >
+            Impact
+          </a>
+
+          <a
+            href="#transformations"
+            style={{
+              color: "#ffffff",
+              textDecoration: "none",
+            }}
+          >
+            Transformations
+          </a>
+
+          <a
+            href="#journey"
+            style={{
+              color: "#ffffff",
+              textDecoration: "none",
+            }}
+          >
+            Journey
+          </a>
+
+          <a
+            href="/articles"
+            style={{
+              color: "#ffffff",
+              textDecoration: "none",
+            }}
+          >
+            Insights
+          </a>
+
+          <a
+            href="#contact"
+            style={{
+              color: "#ffffff",
+              textDecoration: "none",
+            }}
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>

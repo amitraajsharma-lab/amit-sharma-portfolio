@@ -1,80 +1,179 @@
+import { articles } from "@/lib/articles";
+
 export default function ArticlesPage() {
-  const articles = [
-    {
-      title: "Why GCCs Must Become AI Value Creation Engines",
-      category: "AI Transformation",
-      slug: "gcc-ai-value-engines",
-    },
-    {
-      title: "The Future of Shared Services in an Agentic AI World",
-      category: "Shared Services",
-      slug: "agentic-ai-shared-services",
-    },
-    {
-      title: "Beyond Automation: Building AI-Native Enterprises",
-      category: "Digital Transformation",
-      slug: "ai-native-enterprises",
-    },
-  ];
+  const articleList = Object.entries(articles);
 
   return (
     <main
       style={{
-        background: "#050505",
+        background: "#05070D",
         minHeight: "100vh",
-        padding: "100px 8%",
         color: "#ffffff",
+        padding: "100px 40px",
       }}
     >
-      <h1
-        style={{
-          fontSize: "64px",
-          marginBottom: "60px",
-        }}
-      >
-        Executive Insights
-      </h1>
-
       <div
         style={{
-          display: "grid",
-          gap: "30px",
+          maxWidth: "1400px",
+          margin: "0 auto",
         }}
       >
-        {articles.map((article) => (
-          <a
-            key={article.slug}
-            href={`/articles/${article.slug}`}
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: "80px",
+          }}
+        >
+          <div
             style={{
-              textDecoration: "none",
+              color: "#D4AF37",
+              letterSpacing: "4px",
+              textTransform: "uppercase",
+              marginBottom: "20px",
+              fontSize: "14px",
             }}
           >
-            <div
+            Executive Insights
+          </div>
+
+          <h1
+            style={{
+              fontSize: "72px",
+              marginBottom: "20px",
+            }}
+          >
+            Perspectives on
+            <br />
+            Enterprise Transformation
+          </h1>
+
+          <p
+            style={{
+              maxWidth: "900px",
+              margin: "0 auto",
+              color: "#AAB2C5",
+              fontSize: "22px",
+              lineHeight: "1.8",
+            }}
+          >
+            Insights on AI transformation, operating
+            models, GCC evolution, shared services,
+            customer operations and enterprise value
+            creation through the VISTA™ framework.
+          </p>
+        </div>
+
+        <div
+          style={{
+            background: "#0A0F1C",
+            border: "1px solid rgba(212,175,55,0.15)",
+            borderRadius: "24px",
+            padding: "40px",
+            marginBottom: "60px",
+          }}
+        >
+          <h2
+            style={{
+              color: "#D4AF37",
+              marginBottom: "20px",
+            }}
+          >
+            Featured Framework
+          </h2>
+
+          <h3
+            style={{
+              fontSize: "40px",
+              marginBottom: "20px",
+            }}
+          >
+            VISTA™ Enterprise AI Value Creation Framework
+          </h3>
+
+          <p
+            style={{
+              color: "#C8D0E0",
+              fontSize: "20px",
+              lineHeight: "1.9",
+            }}
+          >
+            A practical model for converting AI investment
+            into measurable business outcomes through
+            Vision, Intelligence, Scale, Transformation
+            and Advantage.
+          </p>
+        </div>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(420px,1fr))",
+            gap: "30px",
+          }}
+        >
+          {articleList.map(([slug, article]) => (
+            <a
+              key={slug}
+              href={`/articles/${slug}`}
               style={{
-                background: "#0b0b0b",
-                border: "1px solid rgba(201,168,76,0.15)",
-                borderRadius: "16px",
-                padding: "35px",
+                textDecoration: "none",
               }}
             >
-              <p
+              <div
                 style={{
-                  color: "#c9a84c",
+                  background: "#111827",
+                  border:
+                    "1px solid rgba(212,175,55,0.15)",
+                  borderRadius: "22px",
+                  padding: "36px",
+                  height: "100%",
                 }}
               >
-                {article.category}
-              </p>
+                <div
+                  style={{
+                    color: "#8AAAE5",
+                    marginBottom: "14px",
+                    fontSize: "14px",
+                    textTransform: "uppercase",
+                    letterSpacing: "2px",
+                  }}
+                >
+                  {article.category}
+                </div>
 
-              <h2
-                style={{
-                  color: "#ffffff",
-                }}
-              >
-                {article.title}
-              </h2>
-            </div>
-          </a>
-        ))}
+                <h2
+                  style={{
+                    color: "#ffffff",
+                    fontSize: "30px",
+                    lineHeight: "1.35",
+                    marginBottom: "16px",
+                  }}
+                >
+                  {article.title}
+                </h2>
+
+                <div
+                  style={{
+                    color: "#D4AF37",
+                    marginBottom: "20px",
+                  }}
+                >
+                  {article.readTime}
+                </div>
+
+                <div
+                  style={{
+                    color: "#C8D0E0",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Executive Perspective →
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </main>
   );

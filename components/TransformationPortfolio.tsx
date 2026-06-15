@@ -1,52 +1,59 @@
 export default function TransformationPortfolio() {
   const transformations = [
     {
-      title: "Utilities Turnaround & Recovery",
+      title: "Enterprise AI Transformation",
+      value: "AED 200M+",
+      subtitle: "Enterprise Value Delivered",
+      description:
+        "Led AI, automation and data-driven transformation initiatives across customer operations, billing, collections and back-office functions, generating measurable business value and operational efficiency.",
+    },
+
+    {
+      title: "UK BIG 4 Utilities Turnaround & Recovery",
       value: "AED 300M+",
+      subtitle: "TCV Portfolio Recovery",
       description:
-        "Recovered a distressed utilities portfolio supporting 3,500+ FTEs, restoring SLA performance, governance, customer satisfaction and financial compliance.",
+        "Recovered a distressed 3,500+ FTE utilities engagement from critical failure to full SLA, KPI and financial compliance while significantly improving customer satisfaction.",
     },
 
     {
-      title: "Enterprise AI & GenAI Transformation",
-      value: "30% CAGR",
-      description:
-        "Designed and scaled AI-powered operating models driving digital revenue growth, automation and enterprise productivity improvements.",
-    },
-
-    {
-      title: "Shared Services Transformation",
+      title: "Shared Services Reinvention",
       value: "AED 40M+",
+      subtitle: "Hard Cost Savings",
       description:
-        "Delivered large-scale process optimisation, intelligent automation and operating model redesign generating sustainable savings.",
+        "Redesigned operating models, implemented intelligent automation and standardised service delivery frameworks to generate sustainable cost reduction.",
     },
 
     {
-      title: "SAP ISU / S4HANA Transformation",
-      value: "Multi-Country",
+      title: "Customer Experience Transformation",
+      value: "-10 → +30",
+      subtitle: "Net Promoter Score",
       description:
-        "Led enterprise ERP-enabled transformation programmes spanning billing, collections, customer operations and digital experience.",
+        "Delivered customer operations modernisation programmes that transformed customer experience performance across digital and assisted service channels.",
     },
 
     {
-      title: "Customer Operations Modernisation",
-      value: "Millions Served",
+      title: "Transformation Control Tower",
+      value: "AED 260M",
+      subtitle: "Governed Portfolio Value",
       description:
-        "Transformed customer operations through digital channels, AI, automation and service redesign across utilities and BPO environments.",
+        "Designed executive governance frameworks, performance dashboards and value realisation models providing real-time visibility for CXO stakeholders.",
     },
 
     {
-      title: "Global Capability Center Leadership",
-      value: "12+ Countries",
+      title: "Digital Revenue Growth",
+      value: "30%",
+      subtitle: "Revenue CAGR",
       description:
-        "Built and scaled global operations, shared services and transformation organisations across multiple geographies.",
+        "Built and scaled AI-led transformation propositions, lighthouse programmes and strategic growth initiatives across utilities and shared services environments.",
     },
   ];
 
   return (
     <section
+      id="transformations"
       style={{
-        background: "#0c0c0d",
+        background: "#0A0F1C",
         padding: "120px 40px",
       }}
     >
@@ -64,10 +71,11 @@ export default function TransformationPortfolio() {
         >
           <div
             style={{
-              color: "#c9a84c",
-              letterSpacing: "3px",
-              marginBottom: "20px",
+              color: "#D4AF37",
               textTransform: "uppercase",
+              letterSpacing: "4px",
+              fontSize: "14px",
+              marginBottom: "20px",
             }}
           >
             Transformation Portfolio
@@ -75,47 +83,76 @@ export default function TransformationPortfolio() {
 
           <h2
             style={{
-              fontSize: "52px",
-              color: "white",
+              fontSize: "56px",
+              color: "#ffffff",
+              marginBottom: "20px",
             }}
           >
-            Boardroom-Level Impact
+            Enterprise Outcomes Delivered
           </h2>
+
+          <p
+            style={{
+              maxWidth: "900px",
+              margin: "0 auto",
+              color: "#AAB2C5",
+              fontSize: "20px",
+              lineHeight: "1.8",
+            }}
+          >
+            Selected transformation programmes spanning
+            enterprise AI, customer operations, shared services,
+            utilities, governance and value creation.
+          </p>
         </div>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit,minmax(380px,1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit,minmax(400px,1fr))",
             gap: "30px",
           }}
         >
-          {transformations.map((item, index) => (
+          {transformations.map((item) => (
             <div
-              key={index}
+              key={item.title}
               style={{
-                background: "#111111",
-                borderRadius: "20px",
-                padding: "35px",
-                border: "1px solid rgba(201,168,76,0.15)",
+                background: "#111827",
+                border: "1px solid rgba(212,175,55,0.15)",
+                borderRadius: "22px",
+                padding: "36px",
               }}
             >
               <div
                 style={{
-                  color: "#c9a84c",
-                  fontSize: "32px",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
+                  color: "#D4AF37",
+                  fontSize: "42px",
+                  fontWeight: 700,
+                  marginBottom: "10px",
                 }}
               >
                 {item.value}
               </div>
 
+              <div
+                style={{
+                  color: "#8AAAE5",
+                  marginBottom: "22px",
+                  fontSize: "15px",
+                  textTransform: "uppercase",
+                  letterSpacing: "2px",
+                }}
+              >
+                {item.subtitle}
+              </div>
+
               <h3
                 style={{
-                  color: "white",
-                  fontSize: "26px",
+                  color: "#F5F7FA",
+                  fontSize: "30px",
                   marginBottom: "20px",
+                  lineHeight: "1.3",
                 }}
               >
                 {item.title}
@@ -123,8 +160,9 @@ export default function TransformationPortfolio() {
 
               <p
                 style={{
-                  color: "#cccccc",
-                  lineHeight: "1.8",
+                  color: "#C8D0E0",
+                  lineHeight: "1.9",
+                  fontSize: "17px",
                 }}
               >
                 {item.description}

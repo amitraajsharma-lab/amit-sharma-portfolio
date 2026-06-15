@@ -5,19 +5,19 @@ export default function ThoughtLeadership() {
       title:
         "How UAE & GCC Governments Are Getting AI Transformation Right",
       summary:
-        "Lessons from the GCC's AI-first agenda and what enterprises can learn from government-led transformation programs.",
+        "The GCC has moved beyond AI experimentation into execution. Governments are building AI-ready operating models, governance structures and national-scale transformation programmes.",
       insight:
-        "AI succeeds when leadership, governance and execution are aligned."
+        "AI transformation succeeds when leadership commitment meets execution discipline.",
     },
 
     {
-      category: "GCC Strategy",
+      category: "Global Capability Centers",
       title:
         "Why GCCs Must Become AI Value Creation Engines",
       summary:
-        "The next generation of Global Capability Centers will be measured by innovation, intelligence and business value rather than labour arbitrage.",
+        "The next generation of GCCs will be measured by innovation, intelligence and business outcomes rather than labour arbitrage.",
       insight:
-        "Future GCCs will create value, not just capacity."
+        "Future GCCs will create value, not simply provide capacity.",
     },
 
     {
@@ -25,48 +25,48 @@ export default function ThoughtLeadership() {
       title:
         "The Future of Shared Services in an Agentic AI World",
       summary:
-        "Agentic AI will fundamentally reshape service delivery, decision-making and workforce productivity.",
+        "Agentic AI will reshape service delivery, workforce productivity and decision-making across shared services organisations.",
       insight:
-        "Shared services are evolving from transaction processing to intelligence orchestration."
+        "Shared services are evolving into intelligence orchestration platforms.",
     },
 
     {
       category: "Operating Models",
       title:
-        "Building Enterprise Operating Models for the AI Era",
+        "Building Enterprise Operating Models For The AI Era",
       summary:
-        "Why organizations must redesign operating models around AI-enabled decision making and execution.",
+        "Most organisations are deploying AI into legacy operating models. The winners will redesign the operating model itself.",
       insight:
-        "Operating model redesign is now a strategic imperative."
+        "Operating model transformation is the missing link in most AI programmes.",
     },
 
     {
       category: "Customer Operations",
       title:
-        "The Future of Customer Operations in Utilities",
+        "The Future Of Customer Operations In Utilities",
       summary:
-        "How AI, automation and digital channels are redefining customer experience across utility providers.",
+        "Customer expectations, AI capabilities and regulatory pressures are redefining how utility providers serve customers.",
       insight:
-        "Utilities are becoming experience businesses."
+        "Utilities are becoming experience businesses, not infrastructure businesses.",
     },
 
     {
-      category: "Digital Transformation",
+      category: "Transformation Leadership",
       title:
-        "Moving Beyond Automation to Enterprise Intelligence",
+        "Moving Beyond Automation To Enterprise Intelligence",
       summary:
-        "The shift from isolated automation initiatives to enterprise-wide intelligent operating models.",
+        "Automation delivers efficiency. Enterprise intelligence delivers strategic advantage.",
       insight:
-        "Automation is no longer enough."
-    }
+        "The future belongs to organisations that transform decision-making, not just processes.",
+    },
   ];
 
   return (
     <section
       id="thought-leadership"
       style={{
-        background: "#080808",
-        padding: "120px 40px",
+        background: "#0A0F1C",
+        padding: "140px 40px",
         color: "#ffffff",
       }}
     >
@@ -79,18 +79,19 @@ export default function ThoughtLeadership() {
         <div
           style={{
             textAlign: "center",
-            marginBottom: "80px",
+            marginBottom: "90px",
           }}
         >
           <div
             style={{
-              color: "#c9a84c",
-              letterSpacing: "4px",
+              color: "#D4AF37",
               textTransform: "uppercase",
-              marginBottom: "16px",
+              letterSpacing: "4px",
+              fontSize: "14px",
+              marginBottom: "20px",
             }}
           >
-            Thought Leadership
+            Executive Insights
           </div>
 
           <h2
@@ -99,20 +100,21 @@ export default function ThoughtLeadership() {
               marginBottom: "20px",
             }}
           >
-            Insights & Perspectives
+            Thought Leadership & Perspectives
           </h2>
 
           <p
             style={{
-              color: "#bdbdbd",
-              maxWidth: "900px",
+              maxWidth: "950px",
               margin: "0 auto",
+              color: "#AAB2C5",
               fontSize: "20px",
               lineHeight: "1.8",
             }}
           >
-            Perspectives on AI, digital transformation,
-            operating models, GCC strategy and enterprise value creation.
+            Perspectives on enterprise AI, operating model
+            transformation, GCC evolution, shared services
+            reinvention and customer operations excellence.
           </p>
         </div>
 
@@ -120,29 +122,28 @@ export default function ThoughtLeadership() {
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit,minmax(380px,1fr))",
-            gap: "28px",
+              "repeat(auto-fit,minmax(420px,1fr))",
+            gap: "30px",
           }}
         >
           {articles.map((article) => (
             <div
               key={article.title}
               style={{
-                background: "#101010",
-                border: "1px solid rgba(201,168,76,0.20)",
-                borderRadius: "20px",
-                padding: "32px",
-                minHeight: "340px",
+                background: "#111827",
+                border: "1px solid rgba(212,175,55,0.15)",
+                borderRadius: "22px",
+                padding: "36px",
                 display: "flex",
                 flexDirection: "column",
               }}
             >
               <div
                 style={{
-                  color: "#c9a84c",
+                  color: "#8AAAE5",
                   textTransform: "uppercase",
-                  fontSize: "13px",
                   letterSpacing: "2px",
+                  fontSize: "13px",
                   marginBottom: "18px",
                 }}
               >
@@ -161,8 +162,8 @@ export default function ThoughtLeadership() {
 
               <p
                 style={{
-                  color: "#cfcfcf",
-                  lineHeight: "1.8",
+                  color: "#C8D0E0",
+                  lineHeight: "1.9",
                   marginBottom: "24px",
                 }}
               >
@@ -172,16 +173,16 @@ export default function ThoughtLeadership() {
               <div
                 style={{
                   marginTop: "auto",
-                  paddingTop: "20px",
                   borderTop:
-                    "1px solid rgba(201,168,76,0.15)",
+                    "1px solid rgba(255,255,255,0.08)",
+                  paddingTop: "20px",
                 }}
               >
                 <div
                   style={{
-                    color: "#c9a84c",
-                    fontWeight: "600",
-                    marginBottom: "8px",
+                    color: "#D4AF37",
+                    fontWeight: 700,
+                    marginBottom: "10px",
                   }}
                 >
                   Key Insight
@@ -189,8 +190,8 @@ export default function ThoughtLeadership() {
 
                 <div
                   style={{
-                    color: "#ffffff",
-                    lineHeight: "1.7",
+                    color: "#F5F7FA",
+                    lineHeight: "1.8",
                   }}
                 >
                   {article.insight}
@@ -198,6 +199,28 @@ export default function ThoughtLeadership() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div
+          style={{
+            marginTop: "80px",
+            textAlign: "center",
+          }}
+        >
+          <a
+            href="/articles"
+            style={{
+              background: "#D4AF37",
+              color: "#000",
+              textDecoration: "none",
+              padding: "18px 36px",
+              borderRadius: "10px",
+              fontWeight: 700,
+              display: "inline-block",
+            }}
+          >
+            View Executive Insights
+          </a>
         </div>
       </div>
     </section>
